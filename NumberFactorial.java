@@ -1,8 +1,4 @@
-/*
-Factorial of a given number
-Input:6
-Output:720
-*/
+
 
 import java.util.*;
 public class NumberFactorial
