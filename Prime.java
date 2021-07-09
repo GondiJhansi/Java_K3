@@ -1,32 +1,24 @@
 
-import java .util.*;
 public class Prime
 {
 	public static void main(String[] args)
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter a Number:");
-		int num=sc.nextInt();
-		int flag=1;
-		if(num==0||num==1)
-			System.out.println(num + " is not a Prime number");
-		else
+		long n=24;
+		if(n==2)
+		  System.out.println(1);
+		int i,result=0;
+		for(i=2;i<=n/2;i++)
 		{
-			for(int i=2;i<=num/2;i++)
+			if(n%i==0)
 			{
-				if(num%i==0)
-				{
-					System.out.println(num + " is not a Prime number");
-					flag=0;
-					break;
-				}
-				
+				result++;
+				break;
 			}
-			if(flag==1)
-				System.out.println(num + " is a Prime number");
-
-		}
-
+		
+		}	 
+		if(result==0)
+			System.out.println(1);
+		else
+			System.out.println(i);
 	}
-
 }
